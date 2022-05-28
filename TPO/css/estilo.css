@@ -1,0 +1,184 @@
+
+/*Acá se ingresan los distintos estilos*/
+html {
+    box-sizing: border-box;
+    font-size:  62.5%;
+  }
+
+#contenedor {
+      display: flex;
+      width: 50%;
+      flex-flow: row wrap;
+  }
+h1{
+    color: white;
+    font-family: 'Parisienne', cursive;
+    font-size: 10rem;
+    text-align:center;
+
+}
+
+table{
+padding: 5%;
+margin: 10%;
+align-content: center;
+align-content:flex-start;
+}
+h2{
+    color: rgb(212, 162, 25);
+    font-family: 'Parisienne', cursive;
+    font-size: 5rem;
+    text-align:center;
+}
+nav {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    border: solid #d8b236;
+    border-width: 10px;
+    font-size: 2rem;
+    z-index: 10;
+    font-family: 'Nunito', sans-serif;
+}
+
+section {
+    margin-left: 35rem;
+    border: solid #d8b236;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    width: 75%;
+}
+body {
+    margin-bottom: 9rem;
+    overflow: auto;
+    background-color: black;
+    color: white;
+    margin-bottom: 10rem;
+}
+form {
+    margin-top: 1rem;
+    margin-left: 35rem;
+    border: solid #d8b236;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    width: 75%;
+    overflow: auto;
+    margin-bottom: 12rem;
+}
+
+/*Acá se ingresan un hover para los enlaces*/
+a{
+    font-weight: bold;
+    color: white;
+}
+
+a:hover{
+    background-color: coral;
+    color: black;
+    transition: all 0.2s ease-in;
+}
+
+/*Acá se ingresan un filtro para las imagenes*/
+img{
+    filter: grayscale(100%)
+}
+
+img:hover{
+    filter: grayscale(0%)
+}
+
+/*Acá se ingresan los tres puntos de corte*/
+@media screen and (max-width:640px) {
+    p {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1024px){
+    p {
+        color: beige;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    p {
+        width: 80%;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+}
+
+
+/*Acá se ingresa la animación para los distintos navegadores*/
+
+@-moz-keyframes colorTitulo {
+    0% {
+        background: rgb(0, 0, 0);
+    }
+    50% {
+        background: rgb(255, 255, 255);
+    }
+    100% {
+        background: rgb(0, 0, 0);
+    }
+}
+
+/* No me lo toma como válido 
+@-ms-keyframes ccolorTitulo {
+    0% {
+        background: rgb(0, 0, 0);
+    }
+    50% {
+        background: rgb(255, 255, 255);
+    }
+    100% {
+        background: rgb(0, 0, 0);
+    }
+}*/
+
+@-webkit-keyframes colorTitulo {
+    0% {
+        background: rgb(0, 0, 0);
+    }
+    50% {
+        background: rgb(255, 255, 255);
+    }
+    100% {
+        background: rgb(0, 0, 0);
+    }
+}
+
+@-o-keyframes colorTitulo {
+    0% {
+        background: rgb(0, 0, 0);
+    }
+    50% {
+        background: rgb(255, 255, 255);
+    }
+    100% {
+        background: rgb(0, 0, 0);
+    }
+}
+
+@keyframes colorTitulo {
+    0% {
+        background: rgb(0, 0, 0);
+    }
+    50% {
+        background: rgb(255, 255, 255);
+    }
+    100% {
+        background: rgb(0, 0, 0);
+    }
+}
+
+.animacion {
+    background: black;
+    color: #FFF;
+    -webkit-animation: colorTitulo 5s linear infinite alternate;
+    -moz-animation: colorTitulo 5s linear infinite alternate;
+    -ms-animation: colorTitulo 5s linear infinite alternate;
+    -o-animation: colorTitulo 5s linear infinite alternate;
+    animation: colorTitulo 5s linear infinite alternate;
+}
